@@ -1,0 +1,11 @@
+name: mac-test
+on: workflow_dispatch
+
+jobs:
+  run-on-mac:
+    runs-on: macos-latest
+    steps:
+      - name: Run commands
+        run: |
+          sw_vers
+          echo "Running on macOS!"
